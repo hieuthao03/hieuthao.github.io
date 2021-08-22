@@ -1,0 +1,13 @@
+#content{
+	border-top-width: thin;
+	border-top-style: dashed;
+	border-top-color: red;
+
+	border-bottom-width:thick;
+	border-bottom-style: dotted;
+	border-bottom-color: pink;
+}
+.block{
+	border: solid 3px blue;
+	border-top: double 5px red;
+}

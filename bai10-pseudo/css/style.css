@@ -1,0 +1,20 @@
+.wrapper{
+	background-color: gray;
+}
+
+h1{
+	color: yellow;
+}
+.content{
+	color: 	pink;
+	border-bottom: solid 3px gray;
+}
+
+.my-border{
+	border-bottom: solid 3px red;
+}
+
+article > p{
+	font-style: italic;
+	border: solid 2px green;
+}

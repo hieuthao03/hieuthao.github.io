@@ -1,0 +1,21 @@
+h1{
+	color: pink;
+	font-size: bold;
+}
+#content{
+ background-color: gray;
+}
+.box-image{
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr6sKY038SymRmAwZFyIfWzoFole_Mj-dW_w&usqp=CAU);
+}
+.box-repeat{
+	width: 1000px;
+	height: 1000px;
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiHXPbyAqOiGw-KaONn-bvqQlL-M9yX6OOsw&usqp=CAU);
+	background-repeat: no-repeat;
+	/*background-position: center top;*/
+	background-attachment: scroll;
+}

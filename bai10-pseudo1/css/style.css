@@ -1,0 +1,14 @@
+[class]{	
+	border: solid 2px;
+}
+h1[special]{
+	border-bottom: solid 1px red;
+}
+h1[id|="3"]{
+	color: red;
+}
+
+p[title$="nt"]{
+	font-weight: bold;
+	border-bottom: solid 2px blue;
+}

@@ -1,0 +1,19 @@
+.content{
+	background-color: gray;
+	color: pink;
+	/*letter-spacing: 10px;*/
+	/*text-align: justify;
+	text-indent: 10px;*/
+	white-space: pre;
+}	
+#content{
+	vertical-align: sub;
+}
+#block{
+	background-color: blue;
+	display: inline;
+}
+#box{
+	background-color: red;
+	display: block;
+}

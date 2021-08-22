@@ -1,0 +1,36 @@
+.content{
+	text-align: center;
+}
+.content a{
+    display: block;
+}
+.content a{
+	background-color: #9f80ff;
+	color: white;
+	display: inline-block;
+	padding: 20px;  
+}
+.block{
+	text-align: center;
+	font-family: arial;
+}
+.block strong{
+	color: #00aeef;
+}
+.box{
+	text-align: center;
+	color: gray;
+	font-family: arial;
+}
+.wrapper{
+    text-align: center
+}
+.wrapper li{
+	display: inline;
+}
+.wrapper li a{
+    background-color: black;
+    color: white;
+    display: inline-block;
+    line-height: 53px;
+    width: 160px;
