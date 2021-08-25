@@ -1,7 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}    
 body {
     font-family: "Lato" , sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.7;
     color: gray;
     padding: 30px;
@@ -36,15 +41,17 @@ header {
 }
 .heading-primary_main {
     display: block;
-    font-size: 45px;
+    font-size: 4.5rem;
     font-weight: 400;
     letter-spacing: 15px;
+    animation: moveInRight 1s ease-out;
 }
 .heading-primary_sub {
     display: block;
-    font-size: 10px;
+    font-size: 1rem;
     font-weight: 700;
     letter-spacing: 18px;
+    animation: moveInLeft 1s ease-out;
 }
 .btn,
 .btn:link,
@@ -54,7 +61,7 @@ header {
   padding: 15px 40px;
   display: inline-block;
   border-radius: 100px;
-  font-size: 16px;
+  font-size: 1.6rem;
   position: relative;
 }
 .btn {
@@ -87,4 +94,47 @@ header {
 .btn:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
+}
+.btn-animated{
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+@keyframes moveInLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80%{
+        transform: translateX(10)
+    }    
+    100%{
+        opacity: 1;
+        transform: translate(0);
+        }
+}
+@keyframes moveInRight {
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80%{
+        transform: translateX(-10)
+    }    
+    100%{
+        opacity: 1;
+        transform: translate(0);
+        }
+}
+@keyframes moveInBottom {
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+        }
+}
+html{
+    font-size: 42.5%;
 }
