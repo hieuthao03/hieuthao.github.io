@@ -1,0 +1,27 @@
+ .header {
+    background-image: url("../img/xemec.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    height: 95vh;   
+    clip-path: ellipse(65% 80% at 51% 19%);
+
+    &__text-box {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__logo {
+        height: 100px;
+    }
+
+    &__logo-box {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+}
+ 
