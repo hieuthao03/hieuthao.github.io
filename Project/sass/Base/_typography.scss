@@ -20,6 +20,11 @@ body {
         letter-spacing: 15px;
         animation: moveInRight 1s ease-out;
         color: $color-primary-light;
+
+        @include respond(phone){
+            letter-spacing: 1rem;
+            font-size: 5rem;
+        }
     }
 
     &__sub {
@@ -29,6 +34,10 @@ body {
         letter-spacing: 18px;
         animation: moveInLeft 1s ease-out;
         color: $color-primary-light;
+
+        @include respond(phone){
+            letter-spacing: .5rem;
+        }
     }
 }
 .heading-secondary{
@@ -39,6 +48,15 @@ body {
     letter-spacing: 2rem;
     cursor: pointer;
     text-align: center;
+
+    @include respond(tab-port){
+        font-size: 3rem;
+    }
+
+    @include respond(phone){
+        font-size: 3.5rem;
+    }
+
     background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
     color:  transparent;
     -webkit-background-clip: text;

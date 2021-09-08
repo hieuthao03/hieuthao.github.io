@@ -1,6 +1,14 @@
 .composition{
     position: relative;
     &__photo{
+
+        @include respond(tab-port){
+            float: left;
+            position: relative;
+            width: 33.3333%;
+            box-shadow: 0 1.5rem 3rem rgba($color-blue, .2);
+            margin-bottom: 3rem;
+        }
         width: 60%;
         box-shadow: 0 1.5rem 4rem rgba($color: $color-blue, $alpha: 4);
         border-radius: 3rem;
@@ -9,14 +17,30 @@
         outline-offset: 1rem;
         transform: all .2s;
         &--p1{
-            left: -5rem;
+            @include respond(tab-port){
+                top: 0;
+                transform: scale(1.1);
+            }
+            left: 2rem;
             top: -2rem;
         }
         &--p2{
+            @include respond(tab-port){
+                top: -1rem;
+               transform: scale(1.2);
+               right: 0;
+               z-index: 12;
+             }
             right: 0rem;
             top:-6rem;
         }
         &--p3{
+            @include respond(tab-port){
+                top: 0;
+               transform: scale(1.1);
+                left: 0;
+               z-index: 12;
+             }
             right: 6rem;
             top: 8rem;
         }
